@@ -1,4 +1,3 @@
-five-in-row-game
+class-journal
 ================
-
-Classical "Five in row" web game for 2 players
+Web class journal for teachers (with database)
