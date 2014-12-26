@@ -9,8 +9,9 @@
             addRecord($_POST);
         break;
         case "show":
-            echo "SHOW OK";
+            showTable($_POST);
         break;
+        
         default:
             die("SOMETHING WRONG");
         break;

@@ -42,7 +42,6 @@
             </form>
         </div>
         <iframe name="result" class="content">
-            тут резалт
         </iframe>
     </div>
 </body>
