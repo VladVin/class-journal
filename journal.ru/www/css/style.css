@@ -1,0 +1,29 @@
+body{
+	background: no-repeat fixed center url("../images/bg.jpg");
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	width: auto;
+	height: auto;
+}
+.wrapper {
+	width: 800px;
+	height: auto;
+	margin: 0 auto;
+	background: #ffffff;
+	opacity: 0.8;
+}
+.header {
+	height: 100px;
+	text-align: center;
+	padding: 1px;
+}
+.content {
+	width: 790px;
+	margin: 5px;
+}
+.query-form {
+	padding: 10px;
+}
+iframe {
+	border: 0px !important;
+}
