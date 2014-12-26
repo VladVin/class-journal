@@ -55,26 +55,11 @@
         }
     }
 
-    function deleteRecord(id)
+    function deleteRecord($id)
     {
     	prepareDB();
-    	if (tryQuery("DELETE FROM marks WHERE ID='" . id . "'"))
+    	if (tryQuery("DELETE FROM marks WHERE ID='" . $id . "'"))
     		echo "Запись удалена";
-    }
-
-    function prepareDB()
-    {
-        global $connection;
-        $connection = mysql_connect("localhost", "root", "");
-        if (!$connection) 
-        {
-            die("Error: cannot connect to database: " . mysql_error() . "<br>");
-        }
-        $db_select = mysql_select_db("journal");
-        if (!$db_select) 
-        {
-            die("Error: cannot connect to database: " . mysql_error() . "<br>");
-        }
     }
 
     function closeConnectDB()
@@ -134,7 +119,7 @@
             echo "<td>" . $s[3] . "</td>";
             echo "<td>
                     <form name=\"delete\" action=\"delete.php\" method=\"post\" target=\"result\">
-                        <input name=\"markID\" type=\"hidden\" value=\"".$s['marks.ID']."\">
+                        <input name=\"markID\" type=\"hidden\" value=\"".$s[4]."\">
                         <input type=\"submit\" value=\"Удалить запись\">
                     </form>
                   </td>";
