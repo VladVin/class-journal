@@ -23,7 +23,11 @@ body{
 }
 .query-form {
 	padding: 10px;
+	background: #DADADA;
 }
 iframe {
 	border: 0px !important;
+}
+form {
+	margin: 0;
 }
