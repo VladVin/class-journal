@@ -1,3 +1,3 @@
 ﻿<?php
-	// Script for deleting marks from DB by id
+    // Script for deleting marks from DB by id
 ?>
