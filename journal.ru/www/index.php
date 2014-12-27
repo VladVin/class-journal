@@ -29,6 +29,7 @@
                 <input type="text" name="student" placeholder="Фамилия Имя Отчество" size="32">
                 <input type="text" name="subject" placeholder="Предмет" size="20">
                 <select name="mark">
+                    <option value=""></option>
                     <option value="5">5</option>
                     <option value="4">4</option>
                     <option value="3">3</option>
