@@ -20,7 +20,6 @@
 </head>
 <body>
     <div class="wrapper">
-
         <div class="header">
             <h1>КЛАССНЫЙ ЖУРНАЛ</h1>
         </div>
@@ -28,8 +27,14 @@
             <form name="query" action="query.php" method="post" target="result">
                 <b>Введите данные и выберите действие:</b><Br>
                 <input type="text" name="student" placeholder="Фамилия Имя Отчество" size="32">
-                <input type="text" name="subject" placeholder="Предмет" size="15">
-                <input type="text" name="mark" placeholder="Оценка" size="5">
+                <input type="text" name="subject" placeholder="Предмет" size="20">
+                <select name="mark">
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
                 <input type="date" name="date">
                 <input type="hidden" name="action">
                 <input type="submit" name="add" value="Добавить" onmousedown="CheckQueryType('add')">
@@ -37,7 +42,6 @@
             </form>
         </div>
         <iframe name="result" class="content">
-            тут резалт
         </iframe>
     </div>
 </body>

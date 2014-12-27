@@ -6,13 +6,8 @@
     switch ($_POST['action'])
     {
         case "add":
-            if (($_POST['student'] == "") || ($_POST['subject'] == "") || ($_POST['mark'] == "") || ($_POST['date'] == ""))
-            {
-                die("Для добавления необходимо заполнить все поля!");
-            }
-            else echo "Оценка успешно добавлена";
+            addRecord($_POST);
         break;
-
         case "show":
             showTable($_POST);
         break;
